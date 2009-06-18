@@ -1,4 +1,4 @@
-use inc::Module::Install;
+use inc::Module::Install 0.87;
 
 my $module = 'Catalyst::Controller::reCAPTCHA';
 
@@ -15,5 +15,7 @@ build_requires 'Test::More';
 build_requires 'ok';
 
 requires 'Captcha::reCAPTCHA';
+
+resources repository => 'http://dev.catalyst.perl.org/repos/Catalyst/trunk/Catalyst-Controller-reCAPTCHA/';
 
 WriteAll();
